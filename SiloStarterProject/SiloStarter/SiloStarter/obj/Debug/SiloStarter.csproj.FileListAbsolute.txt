@@ -13,3 +13,12 @@ C:\Users\Melvin\Documents\Projects\Tiempos\Fuentes\SiloStarterProject\SiloStarte
 C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\SiloStarter.exe.config
 C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.exe
 C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.pdb
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\SiloStarter.exe
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\SiloStarter.pdb
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\Newtonsoft.Json.dll
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\Newtonsoft.Json.pdb
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\Newtonsoft.Json.xml
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.csprojResolveAssemblyReference.cache
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.Properties.Resources.resources
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.StartScreenForm.resources
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.csproj.GenerateResource.Cache

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.loadStatusLabel = new System.Windows.Forms.Label();
             this.updateProgressBar = new System.Windows.Forms.ProgressBar();
             this.titleLabel = new System.Windows.Forms.Label();
@@ -35,13 +36,16 @@
             this.updateButton = new System.Windows.Forms.Button();
             this.welcomeLabel = new System.Windows.Forms.Label();
             this.indicationLabel = new System.Windows.Forms.Label();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.imageList2 = new System.Windows.Forms.ImageList(this.components);
             this.SuspendLayout();
             // 
             // loadStatusLabel
             // 
             this.loadStatusLabel.AutoSize = true;
-            this.loadStatusLabel.ForeColor = System.Drawing.Color.White;
-            this.loadStatusLabel.Location = new System.Drawing.Point(103, 165);
+            this.loadStatusLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.loadStatusLabel.ForeColor = System.Drawing.Color.Black;
+            this.loadStatusLabel.Location = new System.Drawing.Point(35, 194);
             this.loadStatusLabel.Name = "loadStatusLabel";
             this.loadStatusLabel.Size = new System.Drawing.Size(140, 13);
             this.loadStatusLabel.TabIndex = 7;
@@ -50,10 +54,10 @@
             // 
             // updateProgressBar
             // 
-            this.updateProgressBar.Location = new System.Drawing.Point(116, 139);
+            this.updateProgressBar.Location = new System.Drawing.Point(43, 168);
             this.updateProgressBar.MarqueeAnimationSpeed = 50;
             this.updateProgressBar.Name = "updateProgressBar";
-            this.updateProgressBar.Size = new System.Drawing.Size(104, 23);
+            this.updateProgressBar.Size = new System.Drawing.Size(113, 23);
             this.updateProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.updateProgressBar.TabIndex = 6;
             this.updateProgressBar.UseWaitCursor = true;
@@ -62,11 +66,12 @@
             // titleLabel
             // 
             this.titleLabel.AutoSize = true;
-            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.titleLabel.ForeColor = System.Drawing.Color.White;
-            this.titleLabel.Location = new System.Drawing.Point(96, 111);
+            this.titleLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.titleLabel.ForeColor = System.Drawing.Color.Black;
+            this.titleLabel.Location = new System.Drawing.Point(40, 148);
             this.titleLabel.Name = "titleLabel";
-            this.titleLabel.Size = new System.Drawing.Size(155, 25);
+            this.titleLabel.Size = new System.Drawing.Size(116, 17);
             this.titleLabel.TabIndex = 5;
             this.titleLabel.Text = "Actualizando...";
             this.titleLabel.UseWaitCursor = true;
@@ -74,8 +79,9 @@
             // versionAppLabel
             // 
             this.versionAppLabel.AutoSize = true;
-            this.versionAppLabel.ForeColor = System.Drawing.Color.White;
-            this.versionAppLabel.Location = new System.Drawing.Point(262, 9);
+            this.versionAppLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.versionAppLabel.ForeColor = System.Drawing.Color.Black;
+            this.versionAppLabel.Location = new System.Drawing.Point(287, -1);
             this.versionAppLabel.Name = "versionAppLabel";
             this.versionAppLabel.Size = new System.Drawing.Size(49, 13);
             this.versionAppLabel.TabIndex = 4;
@@ -84,19 +90,22 @@
             // 
             // updateButton
             // 
-            this.updateButton.Location = new System.Drawing.Point(116, 46);
+            this.updateButton.BackColor = System.Drawing.Color.Silver;
+            this.updateButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.updateButton.Location = new System.Drawing.Point(8, 98);
             this.updateButton.Name = "updateButton";
-            this.updateButton.Size = new System.Drawing.Size(110, 39);
+            this.updateButton.Size = new System.Drawing.Size(181, 35);
             this.updateButton.TabIndex = 8;
             this.updateButton.Text = "Buscar Actualizaciones";
-            this.updateButton.UseVisualStyleBackColor = true;
+            this.updateButton.UseVisualStyleBackColor = false;
             this.updateButton.Click += new System.EventHandler(this.updateButton_Click);
             // 
             // welcomeLabel
             // 
             this.welcomeLabel.AutoSize = true;
-            this.welcomeLabel.ForeColor = System.Drawing.Color.White;
-            this.welcomeLabel.Location = new System.Drawing.Point(101, 88);
+            this.welcomeLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.welcomeLabel.ForeColor = System.Drawing.Color.Black;
+            this.welcomeLabel.Location = new System.Drawing.Point(79, 9);
             this.welcomeLabel.Name = "welcomeLabel";
             this.welcomeLabel.Size = new System.Drawing.Size(141, 13);
             this.welcomeLabel.TabIndex = 9;
@@ -106,19 +115,34 @@
             // indicationLabel
             // 
             this.indicationLabel.AutoSize = true;
-            this.indicationLabel.ForeColor = System.Drawing.Color.White;
-            this.indicationLabel.Location = new System.Drawing.Point(20, 101);
+            this.indicationLabel.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.indicationLabel.ForeColor = System.Drawing.Color.Black;
+            this.indicationLabel.Location = new System.Drawing.Point(0, 21);
             this.indicationLabel.Name = "indicationLabel";
             this.indicationLabel.Size = new System.Drawing.Size(291, 13);
             this.indicationLabel.TabIndex = 10;
             this.indicationLabel.Text = "Por favor autorice la aplicación para buscar actualizaciones.";
             this.indicationLabel.UseWaitCursor = true;
             // 
+            // imageList1
+            // 
+            this.imageList1.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            // 
+            // imageList2
+            // 
+            this.imageList2.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
+            this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
+            this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
+            // 
             // StartScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SlateGray;
+            this.BackgroundImage = global::SiloStarter.Properties.Resources.Sin_título_11;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(336, 216);
             this.Controls.Add(this.indicationLabel);
             this.Controls.Add(this.welcomeLabel);
@@ -146,5 +170,7 @@
         private System.Windows.Forms.Button updateButton;
         public System.Windows.Forms.Label welcomeLabel;
         public System.Windows.Forms.Label indicationLabel;
+        private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.ImageList imageList2;
     }
 }
