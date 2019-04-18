@@ -10,3 +10,6 @@ C:\Users\Melvin\Documents\Projects\Tiempos\Fuentes\SiloStarterProject\SiloStarte
 C:\Users\Melvin\Documents\Projects\Tiempos\Fuentes\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\Newtonsoft.Json.dll
 C:\Users\Melvin\Documents\Projects\Tiempos\Fuentes\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\Newtonsoft.Json.pdb
 C:\Users\Melvin\Documents\Projects\Tiempos\Fuentes\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\Newtonsoft.Json.xml
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\bin\Debug\SiloStarter.exe.config
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.exe
+C:\Desarrollo\Proyectos\Repositorios\Git\SiloLauncher\MBLauncher\SiloStarterProject\SiloStarter\SiloStarter\obj\Debug\SiloStarter.pdb
