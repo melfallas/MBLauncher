@@ -77,9 +77,9 @@
             this.versionAppLabel.ForeColor = System.Drawing.Color.White;
             this.versionAppLabel.Location = new System.Drawing.Point(262, 9);
             this.versionAppLabel.Name = "versionAppLabel";
-            this.versionAppLabel.Size = new System.Drawing.Size(55, 13);
+            this.versionAppLabel.Size = new System.Drawing.Size(49, 13);
             this.versionAppLabel.TabIndex = 4;
-            this.versionAppLabel.Text = "v 0.1.1.10";
+            this.versionAppLabel.Text = "v 0.1.1.1";
             this.versionAppLabel.UseWaitCursor = true;
             // 
             // updateButton
