@@ -72,8 +72,10 @@ namespace SiloStarter
         public bool checkProgramVersion(string pExePath)
         {
             bool availableUpdate = false;
+            //string localVersion = "0.9.2.55";
+            //string serverVersion = "0.9.3.27";
             string localVersion = VersionUtil.getApplicationVersion(pExePath);
-            string serverVersion = this.getLastVersionFromServer();
+            string serverVersion = this.getLastVersionFromServer();            
             string resultString = "L: " + localVersion + " | S: " + serverVersion + " | " + VersionUtil.compareVersions(localVersion, serverVersion);
             Console.WriteLine(resultString);
             //if (String.Compare(localVersion, serverVersion) < 0)

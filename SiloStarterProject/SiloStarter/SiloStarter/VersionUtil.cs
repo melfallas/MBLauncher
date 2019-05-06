@@ -33,10 +33,11 @@ namespace SiloStarter
         public static int getVersionValue(string pVersionString)
         {
             int value = 0;
+            int[] factorArray = { 1000000, 10000, 100, 1 };
             String[] tokenArray = pVersionString.Split('.');
             for (int i = 0; i < tokenArray.Length; i++)
             {
-                value += Int32.Parse(tokenArray[i]) * i;
+                value += Int32.Parse(tokenArray[i]) * factorArray[i];
             }
             return value;
         }
