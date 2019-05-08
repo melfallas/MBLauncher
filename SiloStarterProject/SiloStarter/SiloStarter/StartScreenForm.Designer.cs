@@ -38,6 +38,8 @@
             this.indicationLabel = new System.Windows.Forms.Label();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.imageList2 = new System.Windows.Forms.ImageList(this.components);
+            this.serverLabel = new System.Windows.Forms.Label();
+            this.ftpServerLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // loadStatusLabel
@@ -61,7 +63,7 @@
             this.updateProgressBar.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.updateProgressBar.TabIndex = 6;
             this.updateProgressBar.UseWaitCursor = true;
-            this.updateProgressBar.Value = 10;
+            this.updateProgressBar.Value = 50;
             // 
             // titleLabel
             // 
@@ -136,6 +138,28 @@
             this.imageList2.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList2.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // serverLabel
+            // 
+            this.serverLabel.AutoSize = true;
+            this.serverLabel.BackColor = System.Drawing.Color.White;
+            this.serverLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.serverLabel.Location = new System.Drawing.Point(12, 46);
+            this.serverLabel.Name = "serverLabel";
+            this.serverLabel.Size = new System.Drawing.Size(28, 9);
+            this.serverLabel.TabIndex = 11;
+            this.serverLabel.Text = "Server";
+            // 
+            // ftpServerLabel
+            // 
+            this.ftpServerLabel.AutoSize = true;
+            this.ftpServerLabel.BackColor = System.Drawing.Color.White;
+            this.ftpServerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ftpServerLabel.Location = new System.Drawing.Point(12, 55);
+            this.ftpServerLabel.Name = "ftpServerLabel";
+            this.ftpServerLabel.Size = new System.Drawing.Size(35, 9);
+            this.ftpServerLabel.TabIndex = 12;
+            this.ftpServerLabel.Text = "Updating";
+            // 
             // StartScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -144,6 +168,8 @@
             this.BackgroundImage = global::SiloStarter.Properties.Resources.Sin_título_11;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(336, 216);
+            this.Controls.Add(this.ftpServerLabel);
+            this.Controls.Add(this.serverLabel);
             this.Controls.Add(this.indicationLabel);
             this.Controls.Add(this.welcomeLabel);
             this.Controls.Add(this.updateButton);
@@ -172,5 +198,7 @@
         public System.Windows.Forms.Label indicationLabel;
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.ImageList imageList2;
+        private System.Windows.Forms.Label serverLabel;
+        private System.Windows.Forms.Label ftpServerLabel;
     }
 }

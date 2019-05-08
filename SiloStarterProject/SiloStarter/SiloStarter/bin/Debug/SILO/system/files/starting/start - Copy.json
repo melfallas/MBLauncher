@@ -1,0 +1,8 @@
+{  
+   "mainUrl" : "https://silo-services.herokuapp.com",
+   "updAccess": "ftp.drivehq.com",
+   "updUser" : "mbsoftwarecr",
+   "updPass" : "Credixmb123$",
+   "updPath" : "/ftp/downloads/programs/silo/updates/latest/",
+   "appVersion" : "0.0.0.1"
+}

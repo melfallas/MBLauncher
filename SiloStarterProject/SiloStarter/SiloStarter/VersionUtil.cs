@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SiloStarter.App.Model;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -57,10 +58,10 @@ namespace SiloStarter
             return version;
         }
 
-        public static string getLastVersionFromServer()
+        public static string getLastVersionFromServer(ConfigModel pConfig)
         {
             string serverVersion = SystemConst.DEFAULT_PROGRAM_VERSION;
-            string pServiceURL = SystemConst.MAX_RELEASE_VERSION_SERVICE_URL;
+            string pServiceURL = pConfig.mainUrl + ConectionProperties.MAX_VERSION_SERVICE_URL;
             try
             {
                 RestClientService restClient = new RestClientService();

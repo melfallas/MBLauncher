@@ -7,7 +7,7 @@ using System.Windows.Forms;
 
 namespace SiloStarter
 {
-    class MessageService
+    public class MessageService
     {
         public static DialogResult displayInfoMessage(string pMessage, string pTitle = "")
         {

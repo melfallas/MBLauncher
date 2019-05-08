@@ -1,4 +1,6 @@
-﻿using System;
+﻿using SiloStarter.App.Conectivity;
+using SiloStarter.App.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,10 +17,46 @@ namespace SiloStarter
 {
     public partial class StartScreenForm : Form
     {
+        private ConfigModel config;
+
         public StartScreenForm()
         {
-            InitializeComponent();
-            this.loadControls();
+            try
+            {
+                InitializeComponent();
+                this.loadControls();
+                this.updateButton.Enabled = false;
+                // Cargar la configuración previa
+                this.loadPreviousConfig();
+                this.updatedUrlLabels();
+                // Obtener parámetros del servidor
+                this.getAndSaveServerParameters();
+                this.updatedUrlLabels();
+                this.updateButton.Enabled = true;
+            }
+            catch (Exception e)
+            {
+                MessageService.displayErrorMessage("Error al cargar la aplicación:\n\n" + e.Message);
+                this.updateButton.Enabled = true;
+            }
+        }
+
+        private void updatedUrlLabels() {
+            this.serverLabel.Text = this.config.mainUrl;
+            this.ftpServerLabel.Text = this.config.updAccess;
+        }
+
+        private void loadPreviousConfig()
+        {
+            this.config = new ConfigModel();
+            this.config.load();
+        }
+
+        private void getAndSaveServerParameters()
+        {
+            ServerConnection connection = new ServerConnection();
+            connection.getServerParams(ref this.config);
+            this.config.save();
         }
 
         public void loadControls()
@@ -35,6 +73,7 @@ namespace SiloStarter
         public void showUpdateControls() {
             this.updateProgressBar.Show();
             this.loadStatusLabel.Show();
+            //this.updateButton.Enabled = false;
         }
 
 
@@ -65,7 +104,7 @@ namespace SiloStarter
         public string getLastVersionFromServer()
         {
             //VersionUtil versionUtil = new VersionUtil();
-            return VersionUtil.getLastVersionFromServer();
+            return VersionUtil.getLastVersionFromServer(this.config);
         }
 
         // Método para chequeo de la versión del programa
@@ -94,7 +133,7 @@ namespace SiloStarter
             Console.WriteLine("Descargando fichero del ftp ...");
             string fileName = SystemConst.PROGRAM_EXE_NAME;
             string inputFilePath = Directory.GetCurrentDirectory();
-            FTP_Utilities ftpUtil = new FTP_Utilities();
+            FTP_Utilities ftpUtil = new FTP_Utilities(this.config);
             ftpUtil.downloadFTPFile(inputFilePath, fileName);
             Console.WriteLine("Fichero descargado correctamente ...");
         }
